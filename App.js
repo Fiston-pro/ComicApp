@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 
 import HomeScreen from './screens/Home';
 import SplashScreen from './screens/SplashScreen';
+import ComicDetailScreen from './screens/ComicDetail';
 
 const Stack = createNativeStackNavigator();
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ export default function App() {
             name="HomeScreen"
             component={HomeScreen}
           />
+          <Stack.Screen name="ComicDetailScreen" component={ComicDetailScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </QueryClientProvider>
