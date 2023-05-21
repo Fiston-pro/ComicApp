@@ -25,7 +25,7 @@ const ComicDetailScreen = ({ route }) => {
       { comic.safe_title && <Text style={styles.comicTitle}>{comic.safe_title}</Text> }
       <Image source={{ uri: comic?.img }} alt= {comic.alt} style={styles.comicImage} />
       { comic.day && comic.month && comic.year && <Text style={styles.comicAlt}> {comic.day} / {comic.month} / {comic.year} </Text> }
-      { comic.transcript && <Text style={styles.comicTranscript}> Transcript: </Text>}
+      { comic.transcript && <Text style={styles.comicTranscript}>Transcript:</Text>}
       { comic.transcript && <Text style={styles.comicTranscript}> {comic.transcript} </Text> }
     </View>
   );
